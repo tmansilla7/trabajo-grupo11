@@ -1,0 +1,24 @@
+﻿/* URL Paleta de colores LIGHT: https://www.coloreasily.com/?colors=06021c-f7f6fe-fcbb44-fb636b-c61a57 */
+/* URL Paleta de colores DARK: https://www.coloreasily.com/?colors=e9ecfb-0a113d-adb4e4-b43ce4-12295f */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+:root {
+	--light-color-acento-1: #fcbb44;
+	--light-color-acento-2: #fb636b;
+	--light-color-acento-3: #c61a57;
+	--dark-color-acento-1: #adb4e4;
+	--dark-color-acento-2: #b43ce4;
+	--dark-color-acento-3: #12295f;
+}
+ 
+ .light-theme {
+	color: #06021c;
+	background-color: #f7f6fe;
+}
+
+.dark-theme {
+	color: #e9ecfb;
+	background-color: #0a113d;
+}
