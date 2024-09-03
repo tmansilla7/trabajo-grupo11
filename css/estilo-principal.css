@@ -1,19 +1,28 @@
-﻿#categoria-seccion {
-   min-height: 720px;
-   background-color: orange;
-}
+﻿@import url("_core/css/temas_colores_fuentes.css");
 
 #encabezado-principal {
    background-color: red;
    color: white;
 }
 
+#navegacion-categoria {
+   background-color: lime;
+}
+
+#seccion-categoria {
+   min-height: 720px;
+   background-color: orange;
+}
+
+.articulo-categoria {
+   border: solid 3px gray;
+}
 #footer-principal {
    background-color: blue;
    color: white;
 }
 
-/* El estilo 'categoria-articulo' se genera junto con los datos. Representa cada item */
-.categoria-articulo {
-	
+#qr-code {
+   width:100px;
+   height:100px;
 }
