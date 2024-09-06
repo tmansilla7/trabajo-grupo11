@@ -1,21 +1,36 @@
 ﻿@import url("_core/css/temas_colores_fuentes.css");
 
+body{
+   background-color: var(--background-light);
+   color: var(--text-light);
+   font-family: var(--bodyFont);
+}
+
 #encabezado-principal {
-   background-color: red;
-   color: white;
+   background-color: var(--light-color-acento-1);
+   font-family: var(--titlesFont);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 #navegacion-categoria {
-   background-color: lime;
+   background-color: var(--light-color-acento-3);
+   font-family: var(--subtitlesFont);
+   text-align: center;
+   padding: 5px;
 }
 
 #seccion-categoria {
    min-height: 720px;
-   background-color: orange;
+   background-color: var(--light-color-acento-2);
+   padding: 5px;
 }
 
 .articulo-categoria {
-   border: solid 3px gray;
+   border: solid 3px var(--light-color-acento-1);
+   padding: 5px;
 }
 #footer-principal {
    background-color: blue;
@@ -26,3 +41,18 @@
    width:100px;
    height:100px;
 }
+
+.item-valor-portada {
+   max-width: 70%;
+   margin: 0, auto;
+}
+
+.logo_Header {
+   max-width: 20%;
+   margin: 0, auto;
+}
+
+.item-valor-nombre{
+   font-family: var(--subtitlesFont);
+}
+

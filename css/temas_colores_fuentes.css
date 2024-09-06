@@ -4,21 +4,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
+	--background-light: #f7f6fe;
+	--background-dark: #0a113d;
+	--text-light: #06021c;
+	--text-dark: #e9ecfb;
 	--light-color-acento-1: #fcbb44;
 	--light-color-acento-2: #fb636b;
 	--light-color-acento-3: #c61a57;
 	--dark-color-acento-1: #adb4e4;
 	--dark-color-acento-2: #b43ce4;
 	--dark-color-acento-3: #12295f;
+	--titlesFont: 'Fira Code', monospace;
+	--bodyFont: 'Roboto Mono', monospace;
+	--subtitlesFont: 'Montserrat', sans-serif;
 }
  
  .light-theme {
-	color: #06021c;
-	background-color: #f7f6fe;
+	color: var(--text-light);
+	background-color: var(--background-light);
 }
 
 .dark-theme {
-	color: #e9ecfb;
-	background-color: #0a113d;
+	color: var(--text-dark);
+	background-color: var(--background-dark);
 }
