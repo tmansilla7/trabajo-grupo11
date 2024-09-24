@@ -1,5 +1,7 @@
 ﻿@import url("_core/css/temas_colores_fuentes.css");
 
+
+
 body{
    background-color: var(--background-light);
    color: var(--text-light);
@@ -11,31 +13,71 @@ body{
    font-family: var(--titlesFont);
    display: flex;
    justify-content: center;
-   align-items: center;
-   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+#encabezado-principal #buscador {
+   background-size: 10px;
+   width: 33%;
+   margin: auto;
+   border: transparent;
+   border-bottom: solid 1px;
+   border-color: var(--text-light);
+   background-color: transparent;
+   padding: 10px;
+}
+
+#encabezado-principal #iconos {
+   display: flex;
+   margin: auto;
+   width: 33%;
+   justify-content: space-evenly;
+   padding: 10px;
 }
 
 #navegacion-categoria {
    background-color: var(--light-color-acento-3);
    font-family: var(--subtitlesFont);
-   text-align: center;
-   padding: 5px;
+   padding: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#navegacion-categoria a {
+   padding: 10px 20px;
+   border-right: 1px solid;
+   border-color: var(--light-color-acento-1);
+   color: var(--background-light);
+}
+
+#navegacion-categoria a:hover {
+   color: var(--light-color-acento-1);   
+}
+
+#navegacion-categoria a:active {
+   color: var(--light-color-acento-2);   
+}
+
+#navegacion-categoria a:last-child {
+   border: hidden;
 }
 
 #seccion-categoria {
    min-height: 720px;
    background-color: var(--light-color-acento-2);
    padding: 5px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .articulo-categoria {
    border: solid 3px var(--light-color-acento-1);
    padding: 5px;
+   max-width: 30%;
 }
-#footer-principal {
-   background-color: blue;
-   color: white;
-}
+
 
 #qr-code {
    width:100px;
@@ -43,16 +85,20 @@ body{
 }
 
 .item-valor-portada {
-   max-width: 70%;
+   max-width: 100%;
    margin: 0, auto;
 }
 
 .logo_Header {
-   max-width: 20%;
-   margin: 0, auto;
+   max-width: 15%;
+   margin: auto;
 }
 
 .item-valor-nombre{
    font-family: var(--subtitlesFont);
 }
 
+#footer-principal {
+   background-color: blue;
+   color: white;
+}
