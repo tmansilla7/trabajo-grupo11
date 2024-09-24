@@ -1,6 +1,24 @@
 ﻿@import url("_core/css/temas_colores_fuentes.css");
 
 
+   /*¿Habria que agregar otro breakpoint, no?*/
+@media screen and (min-width:60em){
+   #seccion-categoria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   #footer-principal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .articulo-categoria {
+      max-width: 30%;
+   }
+}
 
 body{
    background-color: var(--background-light);
@@ -35,6 +53,12 @@ body{
    padding: 10px;
 }
 
+#encabezado-principal #iconos a {
+   text-decoration: none;
+   color: var(--light-color-acento-3);
+   font-size: large;
+}
+
 #navegacion-categoria {
    background-color: var(--light-color-acento-3);
    font-family: var(--subtitlesFont);
@@ -49,6 +73,7 @@ body{
    border-right: 1px solid;
    border-color: var(--light-color-acento-1);
    color: var(--background-light);
+   text-decoration: none;
 }
 
 #navegacion-categoria a:hover {
@@ -67,26 +92,26 @@ body{
    min-height: 720px;
    background-color: var(--light-color-acento-2);
    padding: 5px;
-   display: flex;
-   flex-wrap: wrap;
    justify-content: center;
 }
 
 .articulo-categoria {
    border: solid 3px var(--light-color-acento-1);
    padding: 5px;
-   max-width: 30%;
+   margin: 0 auto 20px;
 }
-
 
 #qr-code {
    width:100px;
    height:100px;
+   display: block;
+   margin: auto;
 }
 
 .item-valor-portada {
    max-width: 100%;
-   margin: 0, auto;
+   display: block;
+   margin: auto;  
 }
 
 .logo_Header {
@@ -99,6 +124,13 @@ body{
 }
 
 #footer-principal {
-   background-color: blue;
-   color: white;
+   background-color: var(--light-color-acento-1);
+   color: var(--titlesFont);
+   padding: 20px;
+}
+
+#footer-principal-centro {
+   padding: 5px;
+   border: 1px dashed;
+   border-color: var(--bodyFont);
 }
