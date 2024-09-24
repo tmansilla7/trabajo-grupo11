@@ -16,12 +16,18 @@ html{
 }
 
 
-   /*¿Habria que agregar otro breakpoint, no?*/
+   /*Habria que cambiar el tamaño del beakpoint porque 
+   queda mal como esta :p*/
 @media screen and (min-width:60em){
    #seccion-categoria {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+   }
+
+   .header__list {
+      display: flex;
+      flex-wrap: wrap;
    }
 
    #footer-principal {
@@ -32,6 +38,41 @@ html{
 
    .articulo-categoria {
       max-width: 30%;
+   }
+
+   #navegacion-categoria a {
+      border-right: 1px solid;
+      border-color: var(--light-color-acento-1);
+   }
+}
+
+@media screen and (max-width:60em) {
+   #navegacion-categoria {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .header__list {
+      border-left: 1px solid;
+
+   }
+
+   #navegacion-categoria a {
+      width: 100%;
+      border-bottom: 1px solid;
+      border-color: var(--light-color-acento-1);
+   }
+
+   #navegacion-categoria a:last-child {
+      padding-top: 0em;
+   }
+
+   .item-valor-nombre {
+      font-size: larger;
+   }
+   
+   .item-valor-autor {
+      font-size: larger;
    }
 }
 
@@ -102,7 +143,6 @@ svg{
    border-bottom: .2rem solid var(--text-light);
    height: max-content;
    padding-bottom: 1rem;
-   display: flex;
    gap: 1.5rem;
 }
 
@@ -112,8 +152,8 @@ svg{
 }
 
 .header__list{
-   display: flex;
    gap: 1rem;
+   padding: 10px;
    align-items: center;
    justify-content: space-between;
 }
@@ -124,15 +164,16 @@ svg{
    align-items: center;
 }
 
-.header__link{
-
+.header__item:hover {
+   color: var(--light-color-acento-2);
 }
+
+
 
 #navegacion-categoria {
    background-color: var(--light-color-acento-3);
    font-family: var(--subtitlesFont);
    text-align: center;
-   display: flex;
    gap: 2.5rem;
    padding: 2.5rem;
    justify-content: center;
@@ -140,8 +181,6 @@ svg{
 
 #navegacion-categoria a {
    padding: 10px 20px;
-   border-right: 1px solid;
-   border-color: var(--light-color-acento-1);
    color: var(--background-light);
    text-decoration: none;
    font-weight: 700;
@@ -164,7 +203,6 @@ svg{
    padding: 5px;
    justify-content: center;
    gap: 2.5rem;
-   justify-content: center;
    grid-template-columns: repeat(3,1fr);
 }
 
@@ -172,6 +210,16 @@ svg{
    padding: 5px;
    margin: 0 auto 20px;
 }
+
+.item-valor-nombre {
+   font-weight: bold;
+   padding: 0.5em;
+   border-bottom: 1px solid;
+   border-color: var(--textColor);
+}
+
+.item-valor-autor {
+   padding: 0.5em;
 }
 
 #qr-code {
