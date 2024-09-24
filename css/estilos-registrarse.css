@@ -1,11 +1,50 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
-</head>
-<body>
-   
-</body>
-</html>
+﻿/* Registro */
+.form{
+   background-color: var(--light-color-acento-3);
+   color: var(--text-dark);
+   width: max-content;
+   padding: 5rem;
+   margin: 5rem 0 0 0;
+   justify-self: center;
+}
+
+/* @media (prefers-color-scheme: dark) {
+   .form{
+       background-color: var(--dark-color-acento-2);
+       color: var(--text-dark);
+   }
+} */
+
+.form__title{
+   text-align: center;
+   font-size: 2.4rem;
+   margin: 0 0 2.5rem 0;
+}
+
+.form__label{
+   margin: 0 0 1.25rem 0;
+   display: block;
+}
+
+.form__input{
+   background-color: var(--background-light);
+   display: block;
+   padding: 1.25rem;
+   width: -moz-available;
+   margin: 0 0 2.5rem 0;
+}
+
+.form__submit{
+   background-color: var(--background-light);
+   padding: 1.25rem;
+   width: -moz-available;
+   color: var(--text-light);
+   font-weight: 700;
+   text-transform: uppercase;
+   margin: 0 0 2.5rem 0;
+   border-radius: 1rem;
+}
+
+.form__link{
+   font-weight: 700;
+}

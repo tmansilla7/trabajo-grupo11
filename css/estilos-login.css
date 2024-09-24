@@ -1,11 +1,48 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
-</head>
-<body>
-   
-</body>
-</html>
+﻿/* Login */
+.form{
+   background-color: var(--light-color-acento-3);
+   color: var(--text-dark);
+   width: max-content;
+   padding: 5rem;
+   margin: 5rem 0 0 0;
+   justify-self: center;
+   text-align: center;
+}
+
+.form__title{
+   text-align: center;
+   font-size: 2.4rem;
+   margin: 0 0 2.5rem 0;
+}
+
+.form__label{
+   display: block;
+   margin: 0 0 1.25rem 0;
+   text-align: left;
+}
+
+.form__input{
+   background-color: var(--background-light);
+   display: block;
+   padding: 1.25rem;
+   width: -moz-available;
+   margin: 0 0 2.5rem 0;
+}
+
+.form__link{
+   display: inline-block;
+   text-align: center;
+   font-weight: 700;
+   margin: 0 0 1.25rem 0;
+}
+
+.form__submit{
+   background-color: var(--background-light);
+   padding: 1.25rem;
+   width: -moz-available;
+   color: var(--text-light);
+   font-weight: 700;
+   text-transform: uppercase;
+   margin: 0 0 2.5rem 0;
+   border-radius: 1rem;
+}
